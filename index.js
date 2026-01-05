@@ -15,7 +15,10 @@ while(running){
 
     if(isNaN(guess)){
      window.alert('please enter a valid number');
-       
+    }
+    if(guess < min || guess > max){
+        window.alert('please enter a valid number')
+        break;
     }
     if(guess==answer){
         alert(`Your value is correct with ${attempts} total attempts`) 
